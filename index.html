@@ -5,8 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Control</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.17/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.17/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.17/dist/js/uikit-icons.min.js"></script>
+
+
 </head>
 <body>
+
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-margin-small-top" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title"> Project Details</h3>
+                <p>CRM Based Project for Lead Management (complete lifecycle) .</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <h3 class="uk-card-title">Technologies Used</h3>
+                <p>HTML, CSS, JS, BOOTSTRAP,JQUERY, AJAX, PHP, MYSQL .</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <h3 class="uk-card-title">Information</h3>
+                <p>This Project is currently under construction. Check Image Slideshow for Progress</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-margin" tabindex="-1" uk-slideshow="min-height: 400; max-height: 400; animation: push">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="./assets/lead-1.png" alt="" uk-contain>
+            </li>
+            <li>
+                <img src="./assets/lead-2.png" alt="" uk-contain>
+            </li>
+            <li>
+                <img src="./assets/lead-3.png" alt="" uk-contain>
+            </li>
+            <li>
+                <img src="./assets/lead-4.png" alt="" uk-contain>
+            </li>
+        </ul>
     
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+    </div>
 </body>
 </html>
